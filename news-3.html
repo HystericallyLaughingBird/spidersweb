@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Spiders Web Productions | NEWS</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.jpg" alt=""></a>
+        <nav>
+            <div id="bigMenu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="film.html">FILM</a></li>
+                    <li><a href="news.html" class="current">NEWS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div id="hamb" onclick="myFunction()">
+                <div class="menuLine" id="first"></div>
+                <div class="menuLine" id="second"></div>
+                <div class="menuLine" id="third"></div>
+            </div>
+        </nav>
+    </header>
+    <div id="dropdown">
+        <ul>
+          <li id="fontwhite">MENU</li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="film.html">FILM</a></li>
+          <li class="currentmob"><a href="news.html">NEWS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <main id="newsMain">
+        <h1>NEWS</h1>
+        <div class="pagination">
+            <a href="news-2.html">&laquo;</a>
+            <a href="news.html">1</a>
+            <a href="news-2.html">2</a>
+            <a class="active" href="#">3</a>
+        </div>
+        <div class="newsItem">
+            <h2>'Allah Ke Banday is not a dark movie'</h2>
+            <h5>Refiff.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;November 25, 2010</h5>
+            <p>Faruk Kabir is all set for his directorial as well as acting debut, Allah Ke Banday, releasing on Friday. The movie starring Naseeruddin Shah, Sharman Joshi, Vikram Gokhale, Zakir Hussain, Atul Kulkarni, Rukhsar and Anjana Sukhani is about the world of juvenile crime.</p>
+            <a href="https://www.rediff.com/movies/slide-show/slide-show-1-faruk-kabir-on-allah-ke-banday/20101125.htm#1" target="_blank">Read More</a>
+        </div>
+        <div class="newsItem">
+            <h2>Omkara begins with The Awakening</h2>
+            <h5>Bollywood Hungama&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;August 03, 2006</h5>
+            <p>Screening ad films giving out public service messages in theatres before the actual movie begins is not very new. But Ajay Devgan and Kumar Mangat, the producer of Omkara, have taken it to the next level.</p>
+            <a href="https://www.bollywoodhungama.com/news/bollywood/omkara-begins-with-the-awakening/" target="_blank">Read More</a>
+        </div>
+        <div class="pagination">
+            <a href="news-2.html">&laquo;</a>
+            <a href="news.html">1</a>
+            <a href="news-2.html">2</a>
+            <a class="active" href="#">3</a>
+        </div>
+    </main>
+    
+
+    <footer>
+        <div id="address">
+            <h3>Address</h3>
+            <p>A/4 Payal CHS,<br>
+                Fisheries University Lane,<br>
+                Versova, Andheri West,<br>
+                Mumbai - 400061<br>
+                India</p>
+        </div>
+        <div id="logoFooter">
+            <img src="images/logo.jpg" alt="">
+            <p>Spiders Web Production <br> All Rights Reserved 2019</p>
+        </div>
+        <script>
+            function myFunction() {
+            var x = document.getElementById("dropdown");
+            var y = document.getElementById("first");
+            var z = document.getElementById("second");
+            var z1 = document.getElementById("third");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+              y.style.transform = "rotate(0deg)";
+              y.style.position = "relative";
+              y.style.top = "0px";
+              z.style.display = "block";
+              z1.style.transform = "rotate(0deg)"
+              z1.style.position = "relative";
+              z1.style.bottom = "0px"
+              
+            } else {
+              x.style.display = "block";
+              x.style.position = "absolute";
+              x.style.left = "0px";
+              x.style.right = "0px";
+              x.style.top = "99px";
+              x.style.bottom = "0px";
+              y.style.transform = "rotate(45deg)";
+              y.style.position = "relative";
+              y.style.top = "10px";
+              z.style.display = "none";
+              z1.style.transform = "rotate(-45deg)"
+              z1.style.position = "relative";
+              z1.style.bottom = "3px"
+            }
+          }
+          </script>
+    </footer>
+</body>
+</html>

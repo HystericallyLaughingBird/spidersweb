@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Spiders Web Production | The Awakening</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.jpg" alt=""></a>
+        <nav>
+            <div id="bigMenu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="film.html">FILM</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div id="hamb" onclick="myFunction()">
+                <div class="menuLine" id="first"></div>
+                <div class="menuLine" id="second"></div>
+                <div class="menuLine" id="third"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="dropdown">
+        <ul>
+          <li id="fontwhite">MENU</li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="film.html">FILM</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <main id="titleMain">
+        <div id="titleImg">
+            <img src="images/theawakening.svg" alt="">
+        </div>
+        <div id="titleContent">
+            <h1>The Awakening</h1>
+            <h5>2006</h5>
+            <p>Awakening, a short-film that overviews the lives affected on 26th July Mumbai Floods that brought the city to a standstill for an entire week. A young child sets of to keep the city and its chocked drains clean, the same filth and dirt that clogged the city that fateful day and chocked his parents to death as they were stuck in their cars and died of suffocation. </p>
+            <p> Inspired from a true such incident that took place at Juhu right outside Amitab Bachan’s old house. Through this child’s perspective The film is an interaction between Ajay Devgan and the kid which portrays a heart-touching social message.</p>  
+            <p>Ajay Devgan then shares his own bad experience of that day. The original idea to make such a film came from Ajay Devgan and Kumar Mangat as they had planned to screen it before Omkara. Directed by Faruk Kabir the film was shot during the heavy rains in first week of July’ 2006 and over all 400 prints of the short film were released across India. The film is Ajay's gesture to give back something to the country, and is still relevant now more than ever before.</p>
+
+                
+            <h2>Watch</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6vQNj8Iacyw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="norev"></iframe>
+        </div>
+    </main>
+        
+
+    <footer>
+        <div id="address">
+            <h3>Address</h3>
+            <p>A/4 Payal CHS,<br>
+                Fisheries University Lane,<br>
+                Versova, Andheri West,<br>
+                Mumbai - 400061<br>
+                India</p>
+        </div>
+        <div id="logoFooter">
+            <img src="images/logo.jpg" alt="">
+            <p>Spiders Web Production <br> All Rights Reserved 2019</p>
+        </div>
+    </footer>
+
+    <script>
+        function myFunction() {
+        var x = document.getElementById("dropdown");
+        var y = document.getElementById("first");
+        var z = document.getElementById("second");
+        var z1 = document.getElementById("third");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+          y.style.transform = "rotate(0deg)";
+          y.style.position = "relative";
+          y.style.top = "0px";
+          z.style.display = "block";
+          z1.style.transform = "rotate(0deg)"
+          z1.style.position = "relative";
+          z1.style.bottom = "0px"
+          
+        } else {
+          x.style.display = "block";
+          x.style.position = "absolute";
+          x.style.left = "0px";
+          x.style.right = "0px";
+          x.style.top = "99px";
+          x.style.bottom = "0px";
+          y.style.transform = "rotate(45deg)";
+          y.style.position = "relative";
+          y.style.top = "10px";
+          z.style.display = "none";
+          z1.style.transform = "rotate(-45deg)"
+          z1.style.position = "relative";
+          z1.style.bottom = "3px"
+        }
+      }
+    </script>
+</body>
+</html>

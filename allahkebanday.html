@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Spiders Web Production | Allah Ke Banday</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.jpg" alt=""></a>
+        <nav>
+            <div id="bigMenu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="film.html">FILM</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div id="hamb" onclick="myFunction()">
+                <div class="menuLine" id="first"></div>
+                <div class="menuLine" id="second"></div>
+                <div class="menuLine" id="third"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="dropdown">
+        <ul>
+          <li id="fontwhite">MENU</li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="film.html">FILM</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <main id="titleMain">
+        <div id="titleImg">
+            <img src="images/allahkebande.jpg" alt="">
+        </div>
+        <div id="titleContent">
+            <h1>Allah Ke Banday</h1>
+            <h5>2010</h5>
+            <p>Two juvenile delinquents land in prison after committing a series of crimes. Their criminal streak is egged on by a harsh prison environment, leading to more crimes.</p>
+            <h2>Trailer</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LrlJtj7R6U8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="norev"></iframe>
+        </div>
+    </main>
+        
+
+    <footer>
+        <div id="address">
+            <h3>Address</h3>
+            <p>A/4 Payal CHS,<br>
+                Fisheries University Lane,<br>
+                Versova, Andheri West,<br>
+                Mumbai - 400061<br>
+                India</p>
+        </div>
+        <div id="logoFooter">
+            <img src="images/logo.jpg" alt="">
+            <p>Spiders Web Production <br> All Rights Reserved 2019</p>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("dropdown");
+        var y = document.getElementById("first");
+        var z = document.getElementById("second");
+        var z1 = document.getElementById("third");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+          y.style.transform = "rotate(0deg)";
+          y.style.position = "relative";
+          y.style.top = "0px";
+          z.style.display = "block";
+          z1.style.transform = "rotate(0deg)"
+          z1.style.position = "relative";
+          z1.style.bottom = "0px"
+          
+        } else {
+          x.style.display = "block";
+          x.style.position = "absolute";
+          x.style.left = "0px";
+          x.style.right = "0px";
+          x.style.top = "99px";
+          x.style.bottom = "0px";
+          y.style.transform = "rotate(45deg)";
+          y.style.position = "relative";
+          y.style.top = "10px";
+          z.style.display = "none";
+          z1.style.transform = "rotate(-45deg)"
+          z1.style.position = "relative";
+          z1.style.bottom = "3px"
+        }
+      }
+    </script>
+</body>
+</html>
